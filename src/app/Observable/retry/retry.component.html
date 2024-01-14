@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="my-3">
+        <h2>Retry, RetryWhen, Scan and Delay</h2>
+        <div class="row">
+            <div class="col-md-6 mt-3" *ngIf="classesList1">
+                <strong>
+                    Ex - 01
+                </strong>
+                <hr>
+                <p class="bg-light border-round p-4">
+                    <strong>Retry</strong>
+                </p>
+                <br />
+                <table class="table table-active table-bordered">
+                    <tr>
+                        <th>Id</th>
+                        <th>Classes Name & Code</th>
+                    </tr>
+                    <tr *ngFor="let data of classesList1">
+                        <td>{{data.id}}</td>
+                        <td>{{data.ClassesNameCode}}</td>
+                    </tr>
+                </table>
+                <button class="btn btn-primary" type="button" (click)="retryClick()">
+                    <span *ngIf="isFetching1" class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                    <span role="status1">&nbsp;{{isFetching1 ? 'Fetching ' : 'Fetch details...' }} </span>
+                </button>
+                <br>
+                <br>
+                <p>Status : <strong
+                        [ngClass]="status1.includes('success') ? 'text-success'  : 'text-danger'">{{status1}}</strong>
+                </p>
+            </div>
+
+            <div class="col-md-6 mt-3" *ngIf="classesList2">
+                <strong>
+                    Ex - 02
+                </strong>
+                <hr>
+                <p class="bg-light border-round p-4">
+                    <strong>RetryWhen</strong>
+                </p>
+                <br />
+                <table class="table table-active table-bordered">
+                    <tr>
+                        <th>Id</th>
+                        <th>Classes Name & Code</th>
+                    </tr>
+                    <tr *ngFor="let data of classesList2">
+                        <td>{{data.id}}</td>
+                        <td>{{data.ClassesNameCode}}</td>
+                    </tr>
+                </table>
+                <button class="btn btn-primary" type="button" (click)="retryClick2()">
+                    <span *ngIf="isFetching2" class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                    <span role="status2">&nbsp;{{isFetching2 ? 'Fetching ' : 'Fetch details...' }} </span>
+                </button>
+                <br>
+                <br>
+                <p>Status : <strong
+                        [ngClass]="status2.includes('success') ? 'text-success'  : 'text-danger'">{{status2}}</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

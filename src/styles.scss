@@ -1,0 +1,21 @@
+.techList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        background: #f8f8f8;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 7px 13px;
+        margin-bottom: 10px;
+    }
+
+    &.error {
+        color: red;
+    }
+    
+    &.completed {
+        color: green;
+    }
+}

@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="my-3">
+    <h2>Pluck Operator</h2>
+    <!-- Pluck returned single value of object  -->
+    <div class="row">
+      <div class="col-md-6">
+        <strong>
+          Ex - 01
+        </strong>
+        <hr>
+        <p class="bg-light border-round p-4">
+          <strong>Pluck</strong> Pluck data
+        </p>
+        <br />
+        <table class="table table-active table-bordered">
+          <tr>
+            <th>Name</th>
+          </tr>
+          <tr *ngFor="let user of userData1">
+            <td>{{user}} </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <strong>
+          Ex - 02
+        </strong>
+        <hr>
+        <p class="bg-light border-round p-4">
+          <strong>Pluck</strong> Nested property
+        </p>
+        <br>
+        <table class="table table-active table-bordered">
+          <tr class="mb-3 d-block">
+            <th>Job > Title</th>
+          </tr>
+          <tr *ngFor="let user of userData2">
+            <td>{{user}} </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

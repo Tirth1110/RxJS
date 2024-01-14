@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="my-3">
+        <h2>DebounceTime and DistinctUntilChanged </h2>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <strong>
+                Ex - 01
+            </strong>
+            <hr>
+            <p class="bg-light border-round p-4">
+                <strong class="text-primary">DebounceTime</strong>
+            </p>
+            <hr>
+            <div class="form-group">
+                <label class="text-bold mb-2" for="">Search</label>
+                <input type="text" class="form-control" placeholder="Search..." #myInput1>
+            </div>
+            <span *ngIf="requestedData1" class="mt-2 d-block">Requested data : <strong class="text-success">{{requestedData1}}</strong></span>
+        </div>
+
+        <div class="col-md-6">
+            <strong>
+                Ex - 02
+            </strong>
+            <hr>
+            <p class="bg-light border-round p-4">
+                <strong class="text-warning">DistinctUntilChanged</strong>
+            </p>
+            <hr>
+            <div class="form-group">
+                <label class="text-bold mb-2" for="">Search</label>
+                <input type="text" class="form-control" placeholder="Search..." #myInput2>
+            </div>
+            <span *ngIf="requestedData2" class="mt-2 d-block">Requested data : <strong class="text-success">{{requestedData2}}</strong></span>
+        </div>
+    </div>
+</div>

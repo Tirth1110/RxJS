@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Ex = 1 With Promise</strong>
+      <hr>
+      <button class="btn btn-info d-block my-2 text-white" (click)="fetch1()">Buy Laptop</button>
+      <hr>
+      <div >Data : {{result1| json}}</div>
+    </div>
+    <div class="col-md-4">
+      <strong>Ex = 2 With Async / Await</strong>
+      <hr>
+      <button class="btn btn-info d-block my-2 text-white" (click)="fetch2()">Buy Laptop</button>
+      <hr>
+      <div id="result2">Data : {{result2| json}}</div>
+    </div>
+    <div class="col-md-4">
+      <strong>Ex = 3 With Fetch API</strong>
+      <hr>
+      <button class="btn btn-info d-block my-2 text-white" (click)="fetch3()">Buy Laptop</button>
+      <hr>
+      <div id="result3">Data : {{result3| json}}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="my-3">
+        <h2>Filter Operator</h2>
+        <!-- Pluck returned single value of object  -->
+        <div class="row">
+            <div class="col-md-4">
+                <strong>
+                    Ex - 01
+                </strong>
+                <hr>
+                <p class="bg-light border-round p-4">
+                    <strong>Filter :</strong> by length
+                </p>
+                <br />
+                <table class="table table-active table-bordered">
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                    </tr>
+                    <tr *ngFor="let item of result1">
+                        <td>{{item.id}} </td>
+                        <td>{{item.name}} </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-md-4">
+                <strong>
+                    Ex - 02
+                </strong>
+                <hr>
+                <p class="bg-light border-round p-4">
+                    <strong>Filter :</strong> by Gender
+                </p>
+                <br />
+                <table class="table table-active table-bordered">
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                    </tr>
+                    <tr *ngFor="let item of result2">
+                        <td>{{item.id}} </td>
+                        <td>{{item.name}} </td>
+                        <td>{{item.gender}} </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-md-4">
+                <strong>
+                    Ex - 03
+                </strong>
+                <hr>
+                <p class="bg-light border-round p-4">
+                    <strong>Filter :</strong> by nth Item
+                </p>
+                <br />
+                <table class="table table-active table-bordered">
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                    </tr>
+                    <tr *ngFor="let item of result3">
+                        <td>{{item.id}} </td>
+                        <td>{{item.name}} </td>
+                        <td>{{item.gender}} </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
