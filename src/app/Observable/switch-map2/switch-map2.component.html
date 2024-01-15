@@ -1,0 +1,39 @@
+<div class="container my-3">
+    <h2>Switch Map</h2>
+    <br>
+    <h5>Search UxTrendz Video</h5>
+    <form #searchForm="ngForm">
+        <div class="form-group mt-3">
+            <input type="text" required name="searchTerm" ngModel autocomplete="off" class="form-control" />
+        </div>
+    </form>
+    <hr>
+    <br>
+
+    <div class="result">
+        <div class="d-inline-block">
+            <h5>Search Result</h5>
+        </div>
+        <span class="float-end">{{searchResult?.length}} Results found...</span>
+    </div>
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Thumbnail</th>
+                <th scope="col">Title and Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of searchResult; index as i">
+                <th scope="row">{{i+1}}</th>
+                <td> <img src={{data.thumb}} height="150" width="150" class="img-fluid img-thumbnail">
+                </td>
+                <td>
+                    <b class="mb-2 d-block">{{data.title}}</b>
+                    <p>{{data.description}}</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

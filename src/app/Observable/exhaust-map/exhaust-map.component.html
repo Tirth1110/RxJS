@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="my-3">
+        <h2>Exhaust Map</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <strong>
+                Save Data
+            </strong>
+            <hr>
+            <!-- <button (click)="clickSave()" class="btn btn-success">Save Data</button> -->
+            <button #btnClick class="btn btn-success">Save Data</button>
+
+        </div>
+        <div class="col-md-6">
+            <ul class="video-list">
+                <div class="spinner-border" role="status" *ngIf="fetching">
+                    <span class="sr-only"></span>
+                </div>
+                <li><strong>Save Requested : </strong> {{saveRequest}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="my-3">
+        <h2>Share Replay</h2>
+        <hr>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered mt-4">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Thumbnail</th>
+                        <th scope="col">Title and Description</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of allVideo | async; index as i">
+                        <th scope="row">{{i+1}}</th>
+                        <td> <img src={{data.thumb}} height="150" width="150" class="img-fluid img-thumbnail">
+                        </td>
+                        <td>
+                            <b class="mb-2 d-block">{{data.title}}</b>
+                            <p>{{data.description}}</p>
+                        </td>
+                        <td> <button class="btn btn-outline-info">Watch Now</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

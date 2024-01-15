@@ -28,6 +28,13 @@ import { ConcatComponent } from './Observable/concat/concat.component';
 import { MergeMapComponent } from './Observable/merge-map/merge-map.component';
 import { ConcatMapComponent } from './Observable/concat-map/concat-map.component';
 import { SwitchMapComponent } from './Observable/switch-map/switch-map.component';
+import { SwitchMap2Component } from './Observable/switch-map2/switch-map2.component';
+import { FormsModule } from '@angular/forms';
+import { ExhaustMapComponent } from './Observable/exhaust-map/exhaust-map.component';
+import { ShareReplayComponent } from './Observable/share-replay/share-replay.component';
+import { CombineLatestAndWithLatestFromComponent } from './Observable/combine-latest-and-with-latest-from/combine-latest-and-with-latest-from.component';
+import { ZipAndForkJoinComponent } from './Observable/zip-and-fork-join/zip-and-fork-join.component';
+import { CatchErrorAndThrowErrorComponent } from './Observable/catch-error-and-throw-error/catch-error-and-throw-error.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +59,13 @@ import { SwitchMapComponent } from './Observable/switch-map/switch-map.component
     MergeComponent,
     MergeMapComponent,
     ConcatMapComponent,
-    SwitchMapComponent
+    SwitchMapComponent,
+    SwitchMap2Component,
+    ExhaustMapComponent,
+    ShareReplayComponent,
+    CombineLatestAndWithLatestFromComponent,
+    ZipAndForkJoinComponent,
+    CatchErrorAndThrowErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +73,7 @@ import { SwitchMapComponent } from './Observable/switch-map/switch-map.component
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
